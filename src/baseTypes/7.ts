@@ -13,6 +13,6 @@ enum Day {
   saturday="saturday"
 }
 
-let isWeekend = (day:Day):boolean => (day === 'sunday' || day === "saturday") 
-  ? true
-  : false;
+let isWeekend = (day:Day):boolean => (day === Day.sunday || day === Day.saturday)
+
+console.log(isWeekend(Day.thursday))
